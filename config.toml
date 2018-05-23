@@ -1,3 +1,24 @@
-baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Massively"
+baseURL = "https://padmanela.com/"
+#theme = "../.."
+
+# [params]
+  # set below parameter to define a favicon
+  # favicon = "favicon.ico"
+
+[params.posts]
+    foldername = "post"
+    pagesize = "6"
+    featuredpost = "true"
+
+[params.settings]
+    #googleanalytics = "UA-113904582-3"
+    #disqus = "hugo-massively"
+
+[languages]
+[languages.en]
+  languageName = "English"
+#[languages.es]
+  #languageName = "Español"
+  #title = "Massively - Versión Español"
