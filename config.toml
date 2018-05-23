@@ -1,24 +1,61 @@
-languageCode = "en-us"
-title = "Massively"
-baseURL = "https://padmanela.com/"
-#theme = "../.."
+baseurl         = "/"
+theme           = "hugo-casper-two"
+languageCode    = "en-US"
+disqusShortname = ""
+paginate        = 6
+#SectionPagesMenu = "main"
+canonifyurls    = true
 
-# [params]
-  # set below parameter to define a favicon
-  # favicon = "favicon.ico"
+[params]
+  title       = "Padma Nela"
+  subtitle    = "Personal Blog"
+  copyright   = "© 2018"
 
-[params.posts]
-    foldername = "post"
-    pagesize = "6"
-    featuredpost = "true"
+  cover       = "img/blog-cover.jpg"
+  description = "Here is a description of your site."
+  metaDescription = ""
+  googleAnalytics = ""
+  customCSS = []
+  RSSLink = ""
 
-[params.settings]
-    #googleanalytics = "UA-113904582-3"
-    #disqus = "hugo-massively"
+  twitterName = "faketryghost"
+  fbName = "fakeghost"
+  githubName = "eueung"
+  linkedinName = "eueung"
+  mediumName = ""
 
-[languages]
-[languages.en]
-  languageName = "English"
-#[languages.es]
-  #languageName = "Español"
-  #title = "Massively - Versión Español"
+  logo = "hugo-logo.png"
+  orgName = "EM"
+  orgWebsite = "https://www.telematika.org"
+  orgDescription = "Here is a description placeholder for your org"
+
+  showSupport = true
+
+  author = "Padma Nela"
+  authorAvatar = "img/ghost-icon.png"
+  authorLocation = "Hyderabad, IN"
+  authorWebsite = "https://padmanela.com/"
+  authorDescription = "Your description here"
+
+  pageNotFoundTitle = "404 - Page not found"
+
+  #casper or caspertwo
+  singleViewStyle = "casper"
+
+[permalinks]
+  post = "/post/:slug/"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 200
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 100
+
+[[menu.main]]
+  name = "Categories"
+  url = "/categories/"
+  weight = 99
